@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Calculadora - HTML | CSS |JS</title>
+  <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="display-text">
+      <input type="text" class="display-text__item" name="displayText" id="displayText" value="0" readonly>
+    </div>
+
+    <div class="btn-wrapper btn-wrapper--end">
+      <button class="btn-wrapper__item btn-wrapper__item--c" accesskey="C" onclick="calc.writeDisplay(this)">C</button>
+      <button class="btn-wrapper__item" accesskey="/" onclick="calc.writeDisplay(this)">/</button>
+    </div>
+
+    <div class="btn-wrapper">
+      <button class="btn-wrapper__item btn-wrapper__item--colorNumbers" accesskey="7" onclick="calc.writeDisplay(this)">7</button>
+      <button class="btn-wrapper__item btn-wrapper__item--colorNumbers" accesskey="8" onclick="calc.writeDisplay(this)">8</button>
+      <button class="btn-wrapper__item btn-wrapper__item--colorNumbers" accesskey="9" onclick="calc.writeDisplay(this)">9</button>
+      <button class="btn-wrapper__item btn-wrapper__item--asterisk" accesskey="*" onclick="calc.writeDisplay(this)">*</button>
+    </div>
+
+    <div class="btn-wrapper">
+      <button class="btn-wrapper__item btn-wrapper__item--colorNumbers" accesskey="4" onclick="calc.writeDisplay(this)">4</button>
+      <button class="btn-wrapper__item btn-wrapper__item--colorNumbers" accesskey="5" onclick="calc.writeDisplay(this)">5</button>
+      <button class="btn-wrapper__item btn-wrapper__item--colorNumbers" accesskey="6" onclick="calc.writeDisplay(this)">6</button>
+      <button class="btn-wrapper__item" accesskey="+" onclick="calc.writeDisplay(this)">+</button>
+    </div>
+
+    <div class="btn-wrapper">
+      <button class="btn-wrapper__item btn-wrapper__item--colorNumbers" accesskey="3" onclick="calc.writeDisplay(this)">3</button>
+      <button class="btn-wrapper__item btn-wrapper__item--colorNumbers" accesskey="2" onclick="calc.writeDisplay(this)">2</button>
+      <button class="btn-wrapper__item btn-wrapper__item--colorNumbers" accesskey="1" onclick="calc.writeDisplay(this)">1</button>
+      <button class="btn-wrapper__item" accesskey="-" onclick="calc.writeDisplay(this)">-</button>
+    </div>
+
+    <div class="btn-wrapper">
+      <button class="btn-wrapper__item btn-wrapper__item--dot" accesskey="." onclick="calc.writeDisplay(this)">.</button>
+      <button class="btn-wrapper__item btn-wrapper__item--colorNumbers" accesskey="0" onclick="calc.writeDisplay(this)">0</button>
+      <button class="btn-wrapper__item btn-wrapper__item--width" accesskey="=" onclick="calc.writeDisplay(this)">=</button>
+    </div>
+  </div>
+  <script src="js/calculadora.js"></script>
+</body>
+</html>
